@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.codetreatise.controller.DashboardController">
+   <left>
+      <VBox prefHeight="660.0" prefWidth="169.0" style="-fx-background-color: grey;" stylesheets="" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="ground" onAction="#ground" prefHeight="76.0" prefWidth="172.0" text="Ground">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin></JFXButton>
+            <JFXButton fx:id="country" onAction="#country" prefHeight="70.0" prefWidth="168.0" text="Country">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin></JFXButton>
+            <JFXButton fx:id="newPlayer" onAction="#addPlayer" prefHeight="66.0" prefWidth="171.0" text="Add New Player">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="player" onAction="#player" prefHeight="70.0" prefWidth="170.0" text="Player Records">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin></JFXButton>
+            <JFXButton fx:id="match" onAction="#addMatch" prefHeight="70.0" prefWidth="170.0" text="Match">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </JFXButton>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+   <center>
+      <Label fx:id="message" textFill="#0eeb4f" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets bottom="500.0" right="100.0" />
+         </BorderPane.margin>
+      </Label>
+   </center>
+</BorderPane>
